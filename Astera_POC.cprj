@@ -3,7 +3,7 @@
   <IsFolder>false</IsFolder>
   <Id>0</Id>
   <IsNewRecord>false</IsNewRecord>
-  <Name>C:\Users\E091587\RSM\KME 30 - External Project Documents\Phase II\Seller Report\SR POC research, discovery &amp; build (June - Sept 2023)\POC items\Astera_POC.cprj</Name>
+  <Name>C:\asterapoc\Astera_POC.cprj</Name>
   <Description />
   <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
   <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
@@ -13,29 +13,76 @@
     <ProjectType>Integration</ProjectType>
     <VcAction>None</VcAction>
     <Members>
-      <ProjectItem xsi:type="ProjectItemFile">
-        <Name>ReportModel1_CCC_VP.Rmd</Name>
+      <ProjectItem xsi:type="ProjectItemFolder">
+        <Name>Dataflows</Name>
         <ProjectType>Integration</ProjectType>
         <VcAction>None</VcAction>
-        <FileInfo>
-          <Properties>
-            <ProjectProperty>
-              <Name>FlowTemplateName</Name>
-              <Value>ReportMining</Value>
-            </ProjectProperty>
-          </Properties>
-          <Path>C:\Users\E091587\RSM\KME 30 - External Project Documents\Phase II\Seller Report\SR POC research, discovery &amp; build (June - Sept 2023)\POC items\ReportModel1_CCC_VP.Rmd</Path>
-          <LastWriteTime>2023-10-09T15:12:46.1848918-05:00</LastWriteTime>
-          <Length>86111</Length>
-          <FileType>Rmd</FileType>
-          <Exists>true</Exists>
-          <Version>1.3</Version>
-        </FileInfo>
+        <Members>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>Dataflow1_Amex.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>DataFlow1_CCC_VP.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+        </Members>
+        <IsExpanded>false</IsExpanded>
       </ProjectItem>
-      <ProjectItem xsi:type="ProjectItemFile">
-        <Name>DataFlow1_CCC_VP.Df</Name>
+      <ProjectItem xsi:type="ProjectItemFolder">
+        <Name>Workflows</Name>
         <ProjectType>Integration</ProjectType>
         <VcAction>None</VcAction>
+        <Members>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>Workflow1.Wfs</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+        </Members>
+        <IsExpanded>false</IsExpanded>
+      </ProjectItem>
+      <ProjectItem xsi:type="ProjectItemFolder">
+        <Name>ReportModels</Name>
+        <ProjectType>Integration</ProjectType>
+        <VcAction>None</VcAction>
+        <Members>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>ReportModel1_CCC_VP.Rmd</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+            <FileInfo>
+              <Properties>
+                <ProjectProperty>
+                  <Name>FlowTemplateName</Name>
+                  <Value>ReportMining</Value>
+                </ProjectProperty>
+              </Properties>
+              <Path>C:\asterapoc\ReportModels\ReportModel1_CCC_VP.Rmd</Path>
+              <LastWriteTime>2023-10-11T10:18:08.1641252-04:00</LastWriteTime>
+              <Length>85259</Length>
+              <FileType>Rmd</FileType>
+              <Exists>true</Exists>
+              <Version>1.3</Version>
+            </FileInfo>
+          </ProjectItem>
+        </Members>
+        <IsExpanded>false</IsExpanded>
+      </ProjectItem>
+      <ProjectItem xsi:type="ProjectItemFolder">
+        <Name>InputFiles</Name>
+        <ProjectType>Integration</ProjectType>
+        <VcAction>None</VcAction>
+        <Members>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>CCC Bank Corp Inc Apr 2023 Servicer Final - FOR TESTING.pdf</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+        </Members>
+        <IsExpanded>false</IsExpanded>
       </ProjectItem>
     </Members>
     <IsExpanded>false</IsExpanded>
@@ -45,29 +92,76 @@
     <ProjectType>Integration</ProjectType>
     <VcAction>None</VcAction>
     <Members>
-      <ProjectItem xsi:type="ProjectItemFile">
-        <Name>ReportModel1_CCC_VP.Rmd</Name>
+      <ProjectItem xsi:type="ProjectItemFolder">
+        <Name>Dataflows</Name>
         <ProjectType>Integration</ProjectType>
         <VcAction>None</VcAction>
-        <FileInfo>
-          <Properties>
-            <ProjectProperty>
-              <Name>FlowTemplateName</Name>
-              <Value>ReportMining</Value>
-            </ProjectProperty>
-          </Properties>
-          <Path>C:\Users\E091587\RSM\KME 30 - External Project Documents\Phase II\Seller Report\SR POC research, discovery &amp; build (June - Sept 2023)\POC items\ReportModel1_CCC_VP.Rmd</Path>
-          <LastWriteTime>2023-10-09T15:12:46.1848918-05:00</LastWriteTime>
-          <Length>86111</Length>
-          <FileType>Rmd</FileType>
-          <Exists>true</Exists>
-          <Version>1.3</Version>
-        </FileInfo>
+        <Members>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>Dataflow1_Amex.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>DataFlow1_CCC_VP.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+        </Members>
+        <IsExpanded>false</IsExpanded>
       </ProjectItem>
-      <ProjectItem xsi:type="ProjectItemFile">
-        <Name>DataFlow1_CCC_VP.Df</Name>
+      <ProjectItem xsi:type="ProjectItemFolder">
+        <Name>Workflows</Name>
         <ProjectType>Integration</ProjectType>
         <VcAction>None</VcAction>
+        <Members>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>Workflow1.Wfs</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+        </Members>
+        <IsExpanded>false</IsExpanded>
+      </ProjectItem>
+      <ProjectItem xsi:type="ProjectItemFolder">
+        <Name>ReportModels</Name>
+        <ProjectType>Integration</ProjectType>
+        <VcAction>None</VcAction>
+        <Members>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>ReportModel1_CCC_VP.Rmd</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+            <FileInfo>
+              <Properties>
+                <ProjectProperty>
+                  <Name>FlowTemplateName</Name>
+                  <Value>ReportMining</Value>
+                </ProjectProperty>
+              </Properties>
+              <Path>C:\asterapoc\ReportModels\ReportModel1_CCC_VP.Rmd</Path>
+              <LastWriteTime>2023-10-11T10:18:08.1641252-04:00</LastWriteTime>
+              <Length>85259</Length>
+              <FileType>Rmd</FileType>
+              <Exists>true</Exists>
+              <Version>1.3</Version>
+            </FileInfo>
+          </ProjectItem>
+        </Members>
+        <IsExpanded>false</IsExpanded>
+      </ProjectItem>
+      <ProjectItem xsi:type="ProjectItemFolder">
+        <Name>InputFiles</Name>
+        <ProjectType>Integration</ProjectType>
+        <VcAction>None</VcAction>
+        <Members>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>CCC Bank Corp Inc Apr 2023 Servicer Final - FOR TESTING.pdf</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+        </Members>
+        <IsExpanded>false</IsExpanded>
       </ProjectItem>
     </Members>
     <IsExpanded>false</IsExpanded>
@@ -83,7 +177,7 @@
       <Path />
       <UncPath />
     </CurrentDirectory>
-    <ProjectPath>C:\Users\E091587\RSM\KME 30 - External Project Documents\Phase II\Seller Report\SR POC research, discovery &amp; build (June - Sept 2023)\POC items</ProjectPath>
+    <ProjectPath>C:\asterapoc</ProjectPath>
     <IsBasic>true</IsBasic>
   </RegressionProperties>
   <OpenFiles />

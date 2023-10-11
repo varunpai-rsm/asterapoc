@@ -3,10 +3,10 @@
   <IsFolder>false</IsFolder>
   <Id>0</Id>
   <IsNewRecord>false</IsNewRecord>
-  <Name>C:\Users\E091587\RSM\KME 30 - External Project Documents\Phase II\Seller Report\SR POC research, discovery &amp; build (June - Sept 2023)\POC items\Vendor Documentation\Astera\ReportModel1_CCC.Rmd</Name>
+  <Name>C:\asterapoc\ReportModels\ReportModel1_CCC_VP.Rmd</Name>
   <Description />
   <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
-  <UpdateDtTm>2023-10-09T15:01:59.3893332-05:00</UpdateDtTm>
+  <UpdateDtTm>2023-10-11T09:54:10.0616448-04:00</UpdateDtTm>
   <ExportTables>
     <FlowDocumentItemAction>
       <ActionProperties>
@@ -187,8 +187,8 @@
       <UncPath />
     </SourceDirectoryForLooping>
     <SampleFilePath>
-      <Path>C:\Users\E091587\RSM\KME 30 - External Project Documents\Phase II\Seller Report\SR POC research, discovery &amp; build (June - Sept 2023)\POC items\Test input files\CCC Bank Corp Inc Apr 2023 Servicer Final - FOR TESTING.pdf</Path>
-      <UncPath>C:\Users\E091587\RSM\KME 30 - External Project Documents\Phase II\Seller Report\SR POC research, discovery &amp; build (June - Sept 2023)\POC items\Test input files\CCC Bank Corp Inc Apr 2023 Servicer Final - FOR TESTING.pdf</UncPath>
+      <Path>C:\asterapoc\InputFiles\CCC Bank Corp Inc Apr 2023 Servicer Final - FOR TESTING.pdf</Path>
+      <UncPath>C:\asterapoc\InputFiles\CCC Bank Corp Inc Apr 2023 Servicer Final - FOR TESTING.pdf</UncPath>
     </SampleFilePath>
     <SampleLineCount>5000</SampleLineCount>
     <OutliningType>ExpandAll</OutliningType>
@@ -206,7 +206,7 @@
       <MinPPI>150</MinPPI>
       <RefreshOnNextRun>false</RefreshOnNextRun>
       <OCRResolution>2</OCRResolution>
-      <PreviousReportPath>C:\Users\E091587\RSM\KME 30 - External Project Documents\Phase II\Seller Report\SR POC research, discovery &amp; build (June - Sept 2023)\POC items\Test input files\CCC Bank Corp Inc Apr 2023 Servicer Final - FOR TESTING.pdf</PreviousReportPath>
+      <PreviousReportPath>C:\asterapoc\InputFiles\CCC Bank Corp Inc Apr 2023 Servicer Final - FOR TESTING.pdf</PreviousReportPath>
       <ScalingFactor>0</ScalingFactor>
       <MaintainOriginalLayout>true</MaintainOriginalLayout>
       <StartPage>0</StartPage>
@@ -1305,8 +1305,8 @@
   <SuppressTransaction>false</SuppressTransaction>
   <MaxLineLength>235</MaxLineLength>
   <SampleFilePath>
-    <Path>C:\Users\E091587\RSM\KME 30 - External Project Documents\Phase II\Seller Report\SR POC research, discovery &amp; build (June - Sept 2023)\POC items\Test input files\CCC Bank Corp Inc Apr 2023 Servicer Final - FOR TESTING.pdf</Path>
-    <UncPath>C:\Users\E091587\RSM\KME 30 - External Project Documents\Phase II\Seller Report\SR POC research, discovery &amp; build (June - Sept 2023)\POC items\Test input files\CCC Bank Corp Inc Apr 2023 Servicer Final - FOR TESTING.pdf</UncPath>
+    <Path>C:\asterapoc\InputFiles\CCC Bank Corp Inc Apr 2023 Servicer Final - FOR TESTING.pdf</Path>
+    <UncPath>C:\asterapoc\InputFiles\CCC Bank Corp Inc Apr 2023 Servicer Final - FOR TESTING.pdf</UncPath>
   </SampleFilePath>
-  <TempPdfPath>C:\Users\E091587\AppData\Local\Temp\Astera\RM_5d4d3f58-d56e-4d92-8cc8-3419c140fe03.pdf</TempPdfPath>
+  <TempPdfPath>C:\Users\e104927\AppData\Local\Temp\Astera\RM_934dc9c2-9937-49d8-a871-945c7c339dc7.pdf</TempPdfPath>
 </UdDocument>
