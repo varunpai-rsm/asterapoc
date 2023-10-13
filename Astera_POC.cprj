@@ -28,6 +28,16 @@
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
           </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>DataFlow1_BOP_VP.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>SuccessNotification.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
         </Members>
         <IsExpanded>false</IsExpanded>
       </ProjectItem>
@@ -37,7 +47,12 @@
         <VcAction>None</VcAction>
         <Members>
           <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Workflow1.Wfs</Name>
+            <Name>MasterWorkflow.Wfs</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>StartWorkflow.Wfs</Name>
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
           </ProjectItem>
@@ -61,25 +76,50 @@
                 </ProjectProperty>
               </Properties>
               <Path>C:\asterapoc\ReportModels\ReportModel1_CCC_VP.Rmd</Path>
-              <LastWriteTime>2023-10-11T10:18:08.1641252-04:00</LastWriteTime>
+              <LastWriteTime>2023-10-11T11:40:23.0949658-04:00</LastWriteTime>
               <Length>85259</Length>
               <FileType>Rmd</FileType>
               <Exists>true</Exists>
               <Version>1.3</Version>
             </FileInfo>
           </ProjectItem>
-        </Members>
-        <IsExpanded>false</IsExpanded>
-      </ProjectItem>
-      <ProjectItem xsi:type="ProjectItemFolder">
-        <Name>InputFiles</Name>
-        <ProjectType>Integration</ProjectType>
-        <VcAction>None</VcAction>
-        <Members>
           <ProjectItem xsi:type="ProjectItemFile">
-            <Name>CCC Bank Corp Inc Apr 2023 Servicer Final - FOR TESTING.pdf</Name>
+            <Name>ReportModel2_BOP_VP.Rmd</Name>
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
+            <FileInfo>
+              <Properties>
+                <ProjectProperty>
+                  <Name>FlowTemplateName</Name>
+                  <Value>ReportMining</Value>
+                </ProjectProperty>
+              </Properties>
+              <Path>C:\asterapoc\ReportModels\ReportModel2_BOP_VP.Rmd</Path>
+              <LastWriteTime>2023-10-12T17:47:18.2700531-04:00</LastWriteTime>
+              <Length>44614</Length>
+              <FileType>Rmd</FileType>
+              <Exists>true</Exists>
+              <Version>1.3</Version>
+            </FileInfo>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>ReportModel2_BOP_VP_1012.Rmd</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+            <FileInfo>
+              <Properties>
+                <ProjectProperty>
+                  <Name>FlowTemplateName</Name>
+                  <Value>ReportMining</Value>
+                </ProjectProperty>
+              </Properties>
+              <Path>C:\asterapoc\ReportModels\ReportModel2_BOP_VP_1012.Rmd</Path>
+              <LastWriteTime>2023-10-12T17:50:21-04:00</LastWriteTime>
+              <Length>45493</Length>
+              <FileType>Rmd</FileType>
+              <Exists>true</Exists>
+              <Version>1.3</Version>
+            </FileInfo>
           </ProjectItem>
         </Members>
         <IsExpanded>false</IsExpanded>
@@ -107,6 +147,16 @@
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
           </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>DataFlow1_BOP_VP.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>SuccessNotification.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
         </Members>
         <IsExpanded>false</IsExpanded>
       </ProjectItem>
@@ -116,7 +166,12 @@
         <VcAction>None</VcAction>
         <Members>
           <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Workflow1.Wfs</Name>
+            <Name>MasterWorkflow.Wfs</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>StartWorkflow.Wfs</Name>
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
           </ProjectItem>
@@ -140,25 +195,50 @@
                 </ProjectProperty>
               </Properties>
               <Path>C:\asterapoc\ReportModels\ReportModel1_CCC_VP.Rmd</Path>
-              <LastWriteTime>2023-10-11T10:18:08.1641252-04:00</LastWriteTime>
+              <LastWriteTime>2023-10-11T11:40:23.0949658-04:00</LastWriteTime>
               <Length>85259</Length>
               <FileType>Rmd</FileType>
               <Exists>true</Exists>
               <Version>1.3</Version>
             </FileInfo>
           </ProjectItem>
-        </Members>
-        <IsExpanded>false</IsExpanded>
-      </ProjectItem>
-      <ProjectItem xsi:type="ProjectItemFolder">
-        <Name>InputFiles</Name>
-        <ProjectType>Integration</ProjectType>
-        <VcAction>None</VcAction>
-        <Members>
           <ProjectItem xsi:type="ProjectItemFile">
-            <Name>CCC Bank Corp Inc Apr 2023 Servicer Final - FOR TESTING.pdf</Name>
+            <Name>ReportModel2_BOP_VP.Rmd</Name>
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
+            <FileInfo>
+              <Properties>
+                <ProjectProperty>
+                  <Name>FlowTemplateName</Name>
+                  <Value>ReportMining</Value>
+                </ProjectProperty>
+              </Properties>
+              <Path>C:\asterapoc\ReportModels\ReportModel2_BOP_VP.Rmd</Path>
+              <LastWriteTime>2023-10-12T17:47:18.2700531-04:00</LastWriteTime>
+              <Length>44614</Length>
+              <FileType>Rmd</FileType>
+              <Exists>true</Exists>
+              <Version>1.3</Version>
+            </FileInfo>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>ReportModel2_BOP_VP_1012.Rmd</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+            <FileInfo>
+              <Properties>
+                <ProjectProperty>
+                  <Name>FlowTemplateName</Name>
+                  <Value>ReportMining</Value>
+                </ProjectProperty>
+              </Properties>
+              <Path>C:\asterapoc\ReportModels\ReportModel2_BOP_VP_1012.Rmd</Path>
+              <LastWriteTime>2023-10-12T17:50:21-04:00</LastWriteTime>
+              <Length>45493</Length>
+              <FileType>Rmd</FileType>
+              <Exists>true</Exists>
+              <Version>1.3</Version>
+            </FileInfo>
           </ProjectItem>
         </Members>
         <IsExpanded>false</IsExpanded>

@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataflowDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ProductVersion="10.3.1.242">
+  <IsFolder>false</IsFolder>
+  <Id>0</Id>
+  <IsNewRecord>false</IsNewRecord>
+  <Name>C:\asterapoc\Dataflows\SuccessNotification.Df</Name>
+  <Description />
+  <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+  <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+  <AutoLayoutOnNextLoad>false</AutoLayoutOnNextLoad>
+  <Views />
+  <ExplicitAnchors />
+  <UseLegacyParameterSyntax>false</UseLegacyParameterSyntax>
+  <Actions>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>ae16e4be-6670-45f3-8a6a-bd403dcbcbef</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>ae16e4be-6670-45f3-8a6a-bd403dcbcbef</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>SharedRestApiConnection</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>200</Height>
+            <Width>200</Width>
+            <X>173</X>
+            <Y>161</Y>
+            <IsExpanded>false</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>APIConnection</Name>
+      </ActionProperties>
+      <DataflowItemDataSharedRestApiConnection>
+        <Name>APIConnection</Name>
+        <IsShared>false</IsShared>
+        <AutoLog>false</AutoLog>
+        <ApiConnectInfo>
+          <BaseUrl>https://www.testnotif.com</BaseUrl>
+          <Timeout>5000</Timeout>
+          <RestApiSecurities />
+          <AuthenticationInfo>
+            <Name />
+            <ApiKeyValue />
+            <ApiKeyLocation>Header</ApiKeyLocation>
+            <Password />
+            <oAuthFlowObjectType>Implicit</oAuthFlowObjectType>
+            <ClientSecret />
+            <TokenSecret />
+            <IncludeSSLCertificate>false</IncludeSSLCertificate>
+            <IgnoreCertificateErrors>false</IgnoreCertificateErrors>
+            <ApiSecuritySchemeType>NoAuth</ApiSecuritySchemeType>
+            <ProvideTokenManually>false</ProvideTokenManually>
+            <AwsSignature>
+              <AccessKey />
+              <SecretKey />
+            </AwsSignature>
+          </AuthenticationInfo>
+          <Parameters />
+          <IsCustomApiSet>false</IsCustomApiSet>
+          <AddClientCertificates>false</AddClientCertificates>
+          <Name>APIConnection</Name>
+          <EnableLogging>false</EnableLogging>
+        </ApiConnectInfo>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>APIConnection</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced />
+          <ValidationRules />
+        </Layout>
+      </DataflowItemDataSharedRestApiConnection>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>24171337-34dc-46eb-972e-9bf3ce26fca9</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>24171337-34dc-46eb-972e-9bf3ce26fca9</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>OpenApiClient</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>200</Height>
+            <Width>200</Width>
+            <X>559</X>
+            <Y>203</Y>
+            <IsExpanded>true</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>Client</Name>
+      </ActionProperties>
+      <DataflowItemDataRestOpenApi>
+        <Name>Client</Name>
+        <IsShared>false</IsShared>
+        <AutoLog>false</AutoLog>
+        <ISupportUniqueHeaders>true</ISupportUniqueHeaders>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Client</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced />
+          <ValidationRules />
+        </Layout>
+        <_TimeoutMilliseconds>5000</_TimeoutMilliseconds>
+        <Password />
+        <UserId />
+        <AuthInfo>
+          <Name />
+          <ApiKeyValue />
+          <ApiKeyLocation>Header</ApiKeyLocation>
+          <Password />
+          <oAuthFlowObjectType>Implicit</oAuthFlowObjectType>
+          <ClientSecret />
+          <TokenSecret />
+          <IncludeSSLCertificate>false</IncludeSSLCertificate>
+          <IgnoreCertificateErrors>false</IgnoreCertificateErrors>
+          <ApiSecuritySchemeType>NoAuth</ApiSecuritySchemeType>
+          <ProvideTokenManually>false</ProvideTokenManually>
+          <AwsSignature>
+            <AccessKey />
+            <SecretKey />
+          </AwsSignature>
+        </AuthInfo>
+        <Parameters IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Client</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced />
+          <ValidationRules />
+        </Parameters>
+        <AuthenticationMethod>None</AuthenticationMethod>
+        <ResponseLayoutOptions>
+          <IncludeStatusCode>true</IncludeStatusCode>
+          <IncludeContentAsString>true</IncludeContentAsString>
+          <IncludeRawBytes>false</IncludeRawBytes>
+          <IncludeResponseHeaders>true</IncludeResponseHeaders>
+          <IncludeResponseUrl>true</IncludeResponseUrl>
+          <IncludeContentLength>false</IncludeContentLength>
+          <IncludeHttpStatusDescription>true</IncludeHttpStatusDescription>
+          <IncludeContentType>true</IncludeContentType>
+          <IncludeContentEncoding>false</IncludeContentEncoding>
+          <SaveDownloadedFilesAsUnique>false</SaveDownloadedFilesAsUnique>
+          <IncludeRawRequest>false</IncludeRawRequest>
+        </ResponseLayoutOptions>
+        <InputFormat>Xml</InputFormat>
+        <RestMethod>Get</RestMethod>
+        <OutputFormat>Xml</OutputFormat>
+        <IncludeMD5>false</IncludeMD5>
+        <RequestFormat>None</RequestFormat>
+        <ResponseFormat>Json</ResponseFormat>
+        <BaseUrl>https://www.testnotif.com</BaseUrl>
+        <SkipRoot>false</SkipRoot>
+        <Resource>/notify</Resource>
+        <HeaderNames />
+        <TimeoutMilliseconds>5000</TimeoutMilliseconds>
+        <NumberOfRetries>0</NumberOfRetries>
+        <DelayBetweenCalls>100</DelayBetweenCalls>
+        <DelayBetweenRetries>500</DelayBetweenRetries>
+        <InputLayoutXsdPath>
+          <Path />
+          <UncPath />
+        </InputLayoutXsdPath>
+        <OutputLayoutXsdPath>
+          <Path />
+          <UncPath />
+        </OutputLayoutXsdPath>
+        <InputLayoutBuildingMethod>UseSampleText</InputLayoutBuildingMethod>
+        <OutputLayoutBuildingMethod>UseSampleText</OutputLayoutBuildingMethod>
+        <OutputLayout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Body</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced>
+            <BaseLayout xsi:type="RecordLayout" IsHierarchicalFile="false">
+              <IsFolder>false</IsFolder>
+              <Id>0</Id>
+              <IsNewRecord>false</IsNewRecord>
+              <Name>root</Name>
+              <Description />
+              <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+              <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+              <IsSharedLayout>false</IsSharedLayout>
+              <LayoutBuildingOptions>
+                <RecordType>Record</RecordType>
+                <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+                <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+              </LayoutBuildingOptions>
+              <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+              <Fields />
+              <Children />
+              <Referenced />
+              <ValidationRules />
+            </BaseLayout>
+          </Referenced>
+          <ValidationRules />
+        </OutputLayout>
+        <DisplayDiagnosticsInException>false</DisplayDiagnosticsInException>
+        <RefreshTokenIfUnauthorized>true</RefreshTokenIfUnauthorized>
+        <IgnoreErrorStatusCode>false</IgnoreErrorStatusCode>
+        <ContinueOnRetryFailure>false</ContinueOnRetryFailure>
+        <UseParallelism>false</UseParallelism>
+        <DegreeOfParallelism>1</DegreeOfParallelism>
+        <PaginationFields>
+          <TotalPagesToRequest>1</TotalPagesToRequest>
+          <ReadTillEnd>false</ReadTillEnd>
+          <Limit>1</Limit>
+          <FieldLocation>Body</FieldLocation>
+        </PaginationFields>
+        <ResponseHeaders />
+        <AddClientCertificates>false</AddClientCertificates>
+        <IsReadOnlyMode>false</IsReadOnlyMode>
+        <KeepConnectionAlive>true</KeepConnectionAlive>
+        <InputContentType>application/json</InputContentType>
+        <OutputContentType>application/json</OutputContentType>
+        <RestParameters />
+        <RestApiResponses>
+          <RestResponse>
+            <HttpCode>0</HttpCode>
+            <ResponseFormat>None</ResponseFormat>
+            <ResponseMeta>
+              <Children />
+              <Elements />
+              <Referenced>
+                <MetaBaseOfMetaElement xsi:type="MetaObject">
+                  <Children />
+                  <Elements />
+                  <Referenced />
+                  <Name>root</Name>
+                  <InboundPortVisible>true</InboundPortVisible>
+                  <OutboundPortVisible>true</OutboundPortVisible>
+                  <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                  <IsEmbeddedMember>false</IsEmbeddedMember>
+                  <Indicator>None</Indicator>
+                </MetaBaseOfMetaElement>
+              </Referenced>
+              <Name>Body</Name>
+              <InboundPortVisible>true</InboundPortVisible>
+              <OutboundPortVisible>true</OutboundPortVisible>
+              <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+              <IsEmbeddedMember>false</IsEmbeddedMember>
+              <Indicator>None</Indicator>
+            </ResponseMeta>
+          </RestResponse>
+        </RestApiResponses>
+        <ExcludeNullValueAttributes>false</ExcludeNullValueAttributes>
+        <XmlNodes />
+        <DoNotProcessRecordsWithErrors>false</DoNotProcessRecordsWithErrors>
+        <ClearIncomingRecordErrors>false</ClearIncomingRecordErrors>
+        <DoNotOverwriteDefaultsWithNullValues>false</DoNotOverwriteDefaultsWithNullValues>
+        <EnableEtags>false</EnableEtags>
+        <IsRetrieving>true</IsRetrieving>
+        <IsUpdating>false</IsUpdating>
+        <FollowRedirects>false</FollowRedirects>
+        <CanRedirectWithAuthInfo>false</CanRedirectWithAuthInfo>
+        <RedirectLimit>1</RedirectLimit>
+        <UseRandomInputData>false</UseRandomInputData>
+        <SharingConnection>true</SharingConnection>
+        <SharedConnectionName>APIConnection</SharedConnectionName>
+        <EnableLogging>false</EnableLogging>
+        <GraphQLQuery />
+      </DataflowItemDataRestOpenApi>
+    </FlowDocumentItemAction>
+  </Actions>
+  <Links />
+  <Maps />
+  <Relationships />
+  <VisualInfo>
+    <UniqueId>81028a80-1b4f-4ab3-bda2-2c02f1026032</UniqueId>
+    <Actions />
+    <DocumentBounds>
+      <Location>
+        <X>172</X>
+        <Y>161</Y>
+      </Location>
+      <Size>
+        <Width>619</Width>
+        <Height>273</Height>
+      </Size>
+      <X>172</X>
+      <Y>161</Y>
+      <Width>619</Width>
+      <Height>273</Height>
+    </DocumentBounds>
+    <DocumentPosition>
+      <X>0</X>
+      <Y>0</Y>
+    </DocumentPosition>
+    <DocumentScale>1</DocumentScale>
+    <IsSelected>false</IsSelected>
+    <MappingMode>Data</MappingMode>
+    <UseMessages>false</UseMessages>
+    <UseOrthogonalLinks>false</UseOrthogonalLinks>
+  </VisualInfo>
+  <Repository>C:\asterapoc\Astera_POC.cprj</Repository>
+  <IsReadyForPreview>false</IsReadyForPreview>
+</DataflowDocument>

@@ -27,7 +27,7 @@
         <ActionTemplateName>ReportMining</ActionTemplateName>
         <NodeBounds>
           <NormalBounds>
-            <Height>572.5001</Height>
+            <Height>617.6221</Height>
             <Width>346</Width>
             <X>203.784</X>
             <Y>5.1219444</Y>
@@ -4133,6 +4133,7 @@
           </ParameterInfoBase>
           <ParameterInfoBase xsi:type="ParameterInfoSingleValue">
             <Name>SourceFilePath</Name>
+            <CurrentValueStr>C:\asterapoc\InputFiles\CCC Bank Corp Inc Apr 2023 Servicer Final - FOR TESTING.pdf</CurrentValueStr>
             <DataType>String</DataType>
             <Direction>Input</Direction>
             <ParameterPath />
@@ -4601,7 +4602,7 @@
   </Maps>
   <Relationships />
   <VisualInfo>
-    <UniqueId>748679aa-6925-45ce-8342-ea991b7a1322</UniqueId>
+    <UniqueId>ccc82388-3814-40b6-8f76-2eb30d6a93ab</UniqueId>
     <Actions />
     <DocumentBounds>
       <Location>

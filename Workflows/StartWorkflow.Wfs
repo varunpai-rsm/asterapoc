@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WorkflowDocument2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ProductVersion="10.3.1.242">
+  <IsFolder>false</IsFolder>
+  <Id>0</Id>
+  <IsNewRecord>false</IsNewRecord>
+  <Name>C:\asterapoc\Workflows\StartWorkflow.Wfs</Name>
+  <Description />
+  <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+  <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+  <AutoLayoutOnNextLoad>false</AutoLayoutOnNextLoad>
+  <Views />
+  <ExplicitAnchors />
+  <UseLegacyParameterSyntax>false</UseLegacyParameterSyntax>
+  <Actions>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>78a7a6fe-a86a-4546-a7e6-01fc22cf1cb3</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>78a7a6fe-a86a-4546-a7e6-01fc22cf1cb3</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>ContextInfo</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>220</Height>
+            <Width>180</Width>
+            <X>56</X>
+            <Y>38</Y>
+            <IsExpanded>true</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>Run_On_File_Drop</Name>
+      </ActionProperties>
+      <DataflowItemDataContext>
+        <Name>Run_On_File_Drop</Name>
+        <EntityName>Run_On_File_Drop</EntityName>
+        <IsShared>false</IsShared>
+        <AutoLog>false</AutoLog>
+        <Parameters>
+          <ParameterInfoBase xsi:type="ParameterInfoSingleValue">
+            <Name>Name</Name>
+            <DataType>String</DataType>
+            <Direction>Input</Direction>
+            <ParameterPath />
+          </ParameterInfoBase>
+          <ParameterInfoBase xsi:type="ParameterInfoSingleValue">
+            <Name>JobId</Name>
+            <DataType>Integer</DataType>
+            <Direction>Input</Direction>
+            <ParameterPath />
+          </ParameterInfoBase>
+          <ParameterInfoBase xsi:type="ParameterInfoSingleValue">
+            <Name>ScheduledJobId</Name>
+            <DataType>Integer</DataType>
+            <Direction>Input</Direction>
+            <ParameterPath />
+          </ParameterInfoBase>
+          <ParameterInfoBase xsi:type="ParameterInfoSingleValue">
+            <Name>ServerName</Name>
+            <DataType>String</DataType>
+            <Direction>Input</Direction>
+            <ParameterPath />
+          </ParameterInfoBase>
+          <ParameterInfoBase xsi:type="ParameterInfoSingleValue">
+            <Name>UserName</Name>
+            <DataType>String</DataType>
+            <Direction>Input</Direction>
+            <ParameterPath />
+          </ParameterInfoBase>
+          <ParameterInfoBase xsi:type="ParameterInfoSingleValue">
+            <Name>DroppedFilePath</Name>
+            <DataType>String</DataType>
+            <Direction>Input</Direction>
+            <ParameterPath />
+          </ParameterInfoBase>
+          <ParameterInfoBase xsi:type="ParameterInfoSingleValue">
+            <Name>SubmissionId</Name>
+            <DataType>Integer</DataType>
+            <Direction>Input</Direction>
+            <ParameterPath />
+          </ParameterInfoBase>
+        </Parameters>
+        <IsSubmissionContext>true</IsSubmissionContext>
+      </DataflowItemDataContext>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>33c04bbf-7c2f-43f3-9b2d-6e7575ee5965</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>33c04bbf-7c2f-43f3-9b2d-6e7575ee5965</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>RunWorkflow2</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>220</Height>
+            <Width>180</Width>
+            <X>657</X>
+            <Y>106</Y>
+            <IsExpanded>true</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>Transformation_Workflow</Name>
+      </ActionProperties>
+      <WorkflowItemDataStartWorkflowJob2>
+        <Name>Transformation_Workflow</Name>
+        <EntityName>Transformation_Workflow</EntityName>
+        <IsShared>false</IsShared>
+        <ActionRole>Normal</ActionRole>
+        <JobFilePath>
+          <Path>C:\asterapoc\Workflows\Message Export Transformation WF.Wfs</Path>
+          <UncPath>C:\asterapoc\Workflows\Message Export Transformation WF.Wfs</UncPath>
+          <RelativePath>Message Export Transformation WF.Wfs</RelativePath>
+        </JobFilePath>
+        <ServerPort>0</ServerPort>
+        <ParameterInfo>
+          <AllowsSharedActions>true</AllowsSharedActions>
+          <AllowsReplacementCharacter>false</AllowsReplacementCharacter>
+          <AllowsFileIterators>false</AllowsFileIterators>
+          <ActionParameters>
+            <ActionParameterInfo>
+              <Name>Message_Export_transformation</Name>
+              <IsExternalParam>false</IsExternalParam>
+              <Parameters>
+                <ParameterInfoBase xsi:type="ParameterInfoFilePath">
+                  <Name>FilePath</Name>
+                  <CurrentValueStr>C:\Users\masood.hyder\Downloads\Intrado Message Export Transformation Project\Message Export transformation.Df</CurrentValueStr>
+                  <DataType>String</DataType>
+                  <Direction>Input</Direction>
+                  <IsWebPath>false</IsWebPath>
+                  <FileUsage>Read</FileUsage>
+                </ParameterInfoBase>
+              </Parameters>
+            </ActionParameterInfo>
+          </ActionParameters>
+        </ParameterInfo>
+        <ResumeActionType>Resume</ResumeActionType>
+        <SavedOutboundMeta>
+          <Children />
+          <Elements />
+          <Referenced>
+            <MetaBaseOfMetaElement xsi:type="MetaObject">
+              <Children />
+              <Elements>
+                <MetaElement>
+                  <CoreDbType>NVarChar</CoreDbType>
+                  <Name>$JobFilePath</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>String</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>NVarChar</CoreDbType>
+                  <Name>FilePath</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>String</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+              </Elements>
+              <Referenced />
+              <Name>Input</Name>
+              <InboundPortVisible>true</InboundPortVisible>
+              <OutboundPortVisible>true</OutboundPortVisible>
+              <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+              <IsEmbeddedMember>false</IsEmbeddedMember>
+              <Indicator>None</Indicator>
+            </MetaBaseOfMetaElement>
+            <MetaBaseOfMetaElement xsi:type="MetaObject">
+              <Children />
+              <Elements>
+                <MetaElement>
+                  <CoreDbType>NVarChar</CoreDbType>
+                  <Name>Status</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>String</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>NVarChar</CoreDbType>
+                  <Name>ErrorMessage</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>String</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>NVarChar</CoreDbType>
+                  <Name>ErrorStack</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>String</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>Boolean</CoreDbType>
+                  <Name>CompletedSuccessfully</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>Boolean</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>Int64</CoreDbType>
+                  <Name>JobId</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>Integer</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>Int64</CoreDbType>
+                  <Name>ParentJobId</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>Integer</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>Int64</CoreDbType>
+                  <Name>SessionId</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>Integer</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+              </Elements>
+              <Referenced />
+              <Name>Output</Name>
+              <InboundPortVisible>true</InboundPortVisible>
+              <OutboundPortVisible>true</OutboundPortVisible>
+              <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+              <IsEmbeddedMember>false</IsEmbeddedMember>
+              <Indicator>None</Indicator>
+            </MetaBaseOfMetaElement>
+          </Referenced>
+          <Name>Transformation_Workflow</Name>
+          <InboundPortVisible>true</InboundPortVisible>
+          <OutboundPortVisible>true</OutboundPortVisible>
+          <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+          <IsEmbeddedMember>false</IsEmbeddedMember>
+          <Indicator>None</Indicator>
+        </SavedOutboundMeta>
+      </WorkflowItemDataStartWorkflowJob2>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>34e2cb7d-b8d6-4a5e-b77f-792053233b66</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>34e2cb7d-b8d6-4a5e-b77f-792053233b66</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>Switch</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>103</Height>
+            <Width>201.44446</Width>
+            <X>334</X>
+            <Y>401</Y>
+            <IsExpanded>true</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>Switch</Name>
+      </ActionProperties>
+      <DataflowItemDataSwitchCase>
+        <Name>Switch</Name>
+        <EntityName>Switch</EntityName>
+        <IsShared>false</IsShared>
+        <AutoLog>false</AutoLog>
+        <ISupportUniqueHeaders>true</ISupportUniqueHeaders>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Switch</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields>
+            <RecordField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="String" IsPrimaryKey="false" Header="DroppedFilePath" Index="0" AllowsNull="true" IsDependent="false" IsCategorical="false" IsIncluded="true" IsFormulaField="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" IsLagVariable="false" TimeSeriesNullTreatment="None" Name="Run_Dataflow">
+              <FieldRoles>Input Output</FieldRoles>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <UniqueId>6ad31c59-67e0-49f5-9580-906e71284d01</UniqueId>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+              <IsVirtual>false</IsVirtual>
+              <IsDataValidationEnabled>true</IsDataValidationEnabled>
+              <MultipartFieldType>Text</MultipartFieldType>
+              <ParameterType>Query</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <IsRequired>true</IsRequired>
+              <SendValueAsPlaintext>false</SendValueAsPlaintext>
+              <RestParameterRequired>false</RestParameterRequired>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <IsResourceParameter>false</IsResourceParameter>
+              <InheritedParameter>No</InheritedParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <AccessPermission>Self</AccessPermission>
+              <TimeToLive>1</TimeToLive>
+              <Content />
+              <DestinationFolder />
+              <ContentType />
+              <DefaultName />
+            </RecordField>
+          </Fields>
+          <Children />
+          <Referenced />
+          <ValidationRules />
+        </Layout>
+        <ActionRole>Normal</ActionRole>
+        <Mode>Enhanced</Mode>
+        <SwitchCaseItems>
+          <SwitchCaseItem>
+            <Index>1</Index>
+            <CaseValue />
+            <CaseExpression>Contains('CCC',Run_Dataflow)</CaseExpression>
+            <OutputValue />
+            <OutputExpression>@"C:\asterapoc\Dataflows\DataFlow1_CCC_VP.Df"</OutputExpression>
+            <IsDefault>false</IsDefault>
+          </SwitchCaseItem>
+          <SwitchCaseItem>
+            <Index>2</Index>
+            <CaseValue />
+            <CaseExpression>Contains('Amex',Run_Dataflow)</CaseExpression>
+            <OutputValue />
+            <OutputExpression>@"C:\asterapoc\Dataflows\Dataflow1_Amex.Df"</OutputExpression>
+            <IsDefault>false</IsDefault>
+          </SwitchCaseItem>
+        </SwitchCaseItems>
+      </DataflowItemDataSwitchCase>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>9972bd5c-ec33-4a81-869b-6e91369c7410</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>9972bd5c-ec33-4a81-869b-6e91369c7410</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>Decision</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>220</Height>
+            <Width>180</Width>
+            <X>334</X>
+            <Y>250</Y>
+            <IsExpanded>false</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>Switch_Field_Not_Null</Name>
+      </ActionProperties>
+      <WorkflowItemDataDecision>
+        <Name>Switch_Field_Not_Null</Name>
+        <EntityName>Switch_Field_Not_Null</EntityName>
+        <IsShared>false</IsShared>
+        <ExpressionText>IsNotNull(File_Classification.Run_Workflow)</ExpressionText>
+      </WorkflowItemDataDecision>
+    </FlowDocumentItemAction>
+  </Actions>
+  <Links>
+    <FlowDocumentItemLink>
+      <UniqueId>a039b05e-bfc8-4e47-aadc-3e38c271c6ba</UniqueId>
+      <Start>Switch_Field_Not_Null</Start>
+      <End>Transformation_Workflow</End>
+      <LinkType>ConditionalTrue</LinkType>
+    </FlowDocumentItemLink>
+  </Links>
+  <Maps>
+    <FlowDocumentItemMap>
+      <UniqueId>d58381fd-e58d-4bd8-8d04-d8393e7c72d4</UniqueId>
+      <Start>Run_On_File_Drop.DroppedFilePath</Start>
+      <End>Transformation_Workflow.Input.FilePath</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+  </Maps>
+  <Relationships />
+  <VisualInfo>
+    <UniqueId>189ed330-c4e4-40f7-9ac8-ebfd2118b414</UniqueId>
+    <Actions />
+    <DocumentBounds>
+      <Location>
+        <X>56</X>
+        <Y>38</Y>
+      </Location>
+      <Size>
+        <Width>813</Width>
+        <Height>497</Height>
+      </Size>
+      <X>56</X>
+      <Y>38</Y>
+      <Width>813</Width>
+      <Height>497</Height>
+    </DocumentBounds>
+    <DocumentPosition>
+      <X>-10</X>
+      <Y>0</Y>
+    </DocumentPosition>
+    <DocumentScale>1</DocumentScale>
+    <IsSelected>false</IsSelected>
+    <MappingMode>Data</MappingMode>
+    <UseMessages>false</UseMessages>
+    <UseOrthogonalLinks>false</UseOrthogonalLinks>
+  </VisualInfo>
+  <Repository>C:\asterapoc\Astera_POC.cprj</Repository>
+</WorkflowDocument2>

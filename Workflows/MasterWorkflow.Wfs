@@ -3,7 +3,7 @@
   <IsFolder>false</IsFolder>
   <Id>0</Id>
   <IsNewRecord>false</IsNewRecord>
-  <Name>C:\asterapoc\Workflows\Workflow1.Wfs</Name>
+  <Name>C:\asterapoc\Workflows\MasterWorkflow.Wfs</Name>
   <Description />
   <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
   <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
@@ -29,8 +29,8 @@
           <NormalBounds>
             <Height>200</Height>
             <Width>200</Width>
-            <X>543</X>
-            <Y>75</Y>
+            <X>619</X>
+            <Y>113</Y>
             <IsExpanded>true</IsExpanded>
             <IsSorted>false</IsSorted>
           </NormalBounds>
@@ -244,17 +244,17 @@
         <ActionTemplateName>FileSystem</ActionTemplateName>
         <NodeBounds>
           <NormalBounds>
-            <Height>200</Height>
+            <Height>326</Height>
             <Width>200</Width>
-            <X>186</X>
-            <Y>81</Y>
+            <X>60</X>
+            <Y>48</Y>
             <IsExpanded>true</IsExpanded>
             <IsSorted>false</IsSorted>
           </NormalBounds>
         </NodeBounds>
         <IsSkip>false</IsSkip>
         <IsHidden>false</IsHidden>
-        <SourceActionRole>Singleton</SourceActionRole>
+        <SourceActionRole>Loop</SourceActionRole>
         <DoNotPushdown>false</DoNotPushdown>
         <Name>FileSystem1</Name>
       </ActionProperties>
@@ -605,12 +605,12 @@
           <ValidationRules />
         </Layout>
         <ContinueIterationOnError>false</ContinueIterationOnError>
-        <ActionRole>Singleton</ActionRole>
+        <ActionRole>Loop</ActionRole>
         <OutboundTransform>
           <Transforms />
         </OutboundTransform>
         <FilePath>c:\asterapoc\InputFiles</FilePath>
-        <Filter>*.pdf</Filter>
+        <Filter>*.*</Filter>
         <FilePathResolved>
           <Path>c:\asterapoc\InputFiles</Path>
           <UncPath>c:\asterapoc\InputFiles</UncPath>
@@ -620,9 +620,577 @@
         <Attributes />
       </DataflowItemDataSourceFileSystem>
     </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>671ec86e-a75c-4c83-a6b5-b39a51a069f7</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>671ec86e-a75c-4c83-a6b5-b39a51a069f7</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>Switch</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>200</Height>
+            <Width>200</Width>
+            <X>360</X>
+            <Y>216</Y>
+            <IsExpanded>true</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>Switch</Name>
+      </ActionProperties>
+      <DataflowItemDataSwitchCase>
+        <Name>Switch</Name>
+        <IsShared>false</IsShared>
+        <AutoLog>false</AutoLog>
+        <ISupportUniqueHeaders>true</ISupportUniqueHeaders>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Switch</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields>
+            <RecordField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="String" IsPrimaryKey="false" Header="F" Index="0" AllowsNull="true" IsDependent="false" IsCategorical="false" IsIncluded="true" IsFormulaField="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" IsLagVariable="false" TimeSeriesNullTreatment="None" Name="FileName">
+              <FieldRoles>Input</FieldRoles>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>false</IsOutput>
+              <IsVariable>false</IsVariable>
+              <Expression />
+              <UniqueId>e0164852-af0a-4683-a7a8-6e81bea0d948</UniqueId>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+              <IsVirtual>false</IsVirtual>
+              <IsDataValidationEnabled>true</IsDataValidationEnabled>
+              <MultipartFieldType>Text</MultipartFieldType>
+              <ParameterType>Query</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <IsRequired>true</IsRequired>
+              <SendValueAsPlaintext>false</SendValueAsPlaintext>
+              <RestParameterRequired>false</RestParameterRequired>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <IsResourceParameter>false</IsResourceParameter>
+              <InheritedParameter>No</InheritedParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <AccessPermission>Self</AccessPermission>
+              <TimeToLive>1</TimeToLive>
+              <Content />
+              <DestinationFolder />
+              <ContentType />
+              <DefaultName />
+            </RecordField>
+            <RecordField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="String" IsPrimaryKey="false" Header="D" Index="1" AllowsNull="true" IsDependent="false" IsCategorical="false" IsIncluded="true" IsFormulaField="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" IsLagVariable="false" TimeSeriesNullTreatment="None" Name="DataFlow">
+              <FieldRoles>Output</FieldRoles>
+              <RegressionType>None</RegressionType>
+              <IsInput>false</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <Expression />
+              <UniqueId>50ef7c2d-c77c-4e2b-acd7-1e4bf012f921</UniqueId>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+              <IsVirtual>false</IsVirtual>
+              <IsDataValidationEnabled>true</IsDataValidationEnabled>
+              <MultipartFieldType>Text</MultipartFieldType>
+              <ParameterType>Query</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <IsRequired>true</IsRequired>
+              <SendValueAsPlaintext>false</SendValueAsPlaintext>
+              <RestParameterRequired>false</RestParameterRequired>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <IsResourceParameter>false</IsResourceParameter>
+              <InheritedParameter>No</InheritedParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <AccessPermission>Self</AccessPermission>
+              <TimeToLive>1</TimeToLive>
+              <Content />
+              <DestinationFolder />
+              <ContentType />
+              <DefaultName />
+            </RecordField>
+          </Fields>
+          <Children />
+          <Referenced />
+          <ValidationRules />
+        </Layout>
+        <ActionRole>Normal</ActionRole>
+        <Mode>Enhanced</Mode>
+        <SwitchCaseItems>
+          <SwitchCaseItem>
+            <Index>1</Index>
+            <CaseValue />
+            <CaseExpression>Contains('CCC',FileName)</CaseExpression>
+            <OutputValue />
+            <OutputExpression>@"C:\asterapoc\Dataflows\DataFlow1_CCC_VP.Df"</OutputExpression>
+            <IsDefault>true</IsDefault>
+          </SwitchCaseItem>
+          <SwitchCaseItem>
+            <Index>2</Index>
+            <CaseValue />
+            <CaseExpression>Contains('BOP', FileName)</CaseExpression>
+            <OutputValue />
+            <OutputExpression>@"C:\asterapoc\Dataflows\DataFlow1_BOP_VP.Df"</OutputExpression>
+            <IsDefault>false</IsDefault>
+          </SwitchCaseItem>
+        </SwitchCaseItems>
+        <SwitchFieldName>FileName</SwitchFieldName>
+      </DataflowItemDataSwitchCase>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>01aeba3b-670e-4b2b-8650-0f3729f0447e</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>01aeba3b-670e-4b2b-8650-0f3729f0447e</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>FileSystemAction</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>200</Height>
+            <Width>200</Width>
+            <X>878</X>
+            <Y>12</Y>
+            <IsExpanded>false</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>FileSystemAction</Name>
+      </ActionProperties>
+      <WorkflowItemDataFile>
+        <Name>FileSystemAction</Name>
+        <IsShared>false</IsShared>
+        <ActionRole>Normal</ActionRole>
+        <FileTaskType>FileMove</FileTaskType>
+        <SourcePath>
+          <Path>c:\asterapoc\InputFiles\*.*</Path>
+          <UncPath>c:\asterapoc\InputFiles\*.*</UncPath>
+        </SourcePath>
+        <DestinationPath>
+          <Path>C:\asterapoc\Archive</Path>
+          <UncPath>C:\asterapoc\Archive</UncPath>
+        </DestinationPath>
+        <OverwriteDestination>false</OverwriteDestination>
+        <ErrorIfNoSourceFilesFound>false</ErrorIfNoSourceFilesFound>
+      </WorkflowItemDataFile>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>af34b16f-4a30-40a5-8583-0d7ef1caf491</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>af34b16f-4a30-40a5-8583-0d7ef1caf491</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>Decision</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>200</Height>
+            <Width>200</Width>
+            <X>894</X>
+            <Y>194</Y>
+            <IsExpanded>false</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>Decision</Name>
+      </ActionProperties>
+      <WorkflowItemDataDecision>
+        <Name>Decision</Name>
+        <IsShared>false</IsShared>
+        <ExpressionText>RunDataflow.Output.CompletedSuccessfully=true</ExpressionText>
+      </WorkflowItemDataDecision>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>dd9dfca1-fe38-4bcb-8a28-0b1995fecdae</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>dd9dfca1-fe38-4bcb-8a28-0b1995fecdae</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>RunDataflow2</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>200</Height>
+            <Width>200</Width>
+            <X>1116</X>
+            <Y>87</Y>
+            <IsExpanded>false</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>Success</Name>
+      </ActionProperties>
+      <WorkflowItemDataStartDataflowJob2>
+        <Name>Success</Name>
+        <EntityName>Success</EntityName>
+        <IsShared>false</IsShared>
+        <ActionRole>Normal</ActionRole>
+        <JobFilePath>
+          <Path />
+          <UncPath />
+        </JobFilePath>
+        <ServerPort>0</ServerPort>
+        <ResumeActionType>Rerun</ResumeActionType>
+        <SavedOutboundMeta>
+          <Children />
+          <Elements />
+          <Referenced>
+            <MetaBaseOfMetaElement xsi:type="MetaObject">
+              <Children />
+              <Elements>
+                <MetaElement>
+                  <CoreDbType>NVarChar</CoreDbType>
+                  <Name>$JobFilePath</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>String</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+              </Elements>
+              <Referenced />
+              <Name>Input</Name>
+              <InboundPortVisible>true</InboundPortVisible>
+              <OutboundPortVisible>true</OutboundPortVisible>
+              <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+              <IsEmbeddedMember>false</IsEmbeddedMember>
+              <Indicator>None</Indicator>
+            </MetaBaseOfMetaElement>
+            <MetaBaseOfMetaElement xsi:type="MetaObject">
+              <Children />
+              <Elements>
+                <MetaElement>
+                  <CoreDbType>NVarChar</CoreDbType>
+                  <Name>Status</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>String</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>NVarChar</CoreDbType>
+                  <Name>ErrorMessage</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>String</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>NVarChar</CoreDbType>
+                  <Name>ErrorStack</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>String</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>Boolean</CoreDbType>
+                  <Name>CompletedSuccessfully</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>Boolean</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>Int64</CoreDbType>
+                  <Name>JobId</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>Integer</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>Int64</CoreDbType>
+                  <Name>ParentJobId</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>Integer</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>Int64</CoreDbType>
+                  <Name>SessionId</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>Integer</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+              </Elements>
+              <Referenced />
+              <Name>Output</Name>
+              <InboundPortVisible>true</InboundPortVisible>
+              <OutboundPortVisible>true</OutboundPortVisible>
+              <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+              <IsEmbeddedMember>false</IsEmbeddedMember>
+              <Indicator>None</Indicator>
+            </MetaBaseOfMetaElement>
+          </Referenced>
+          <Name>Success</Name>
+          <InboundPortVisible>true</InboundPortVisible>
+          <OutboundPortVisible>true</OutboundPortVisible>
+          <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+          <IsEmbeddedMember>false</IsEmbeddedMember>
+          <Indicator>None</Indicator>
+        </SavedOutboundMeta>
+        <RegressionType>None</RegressionType>
+        <IsPushdown>false</IsPushdown>
+      </WorkflowItemDataStartDataflowJob2>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>d6f224e9-20ad-4671-9727-0eeea404a18f</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>d6f224e9-20ad-4671-9727-0eeea404a18f</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>RunDataflow2</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>200</Height>
+            <Width>200</Width>
+            <X>1124</X>
+            <Y>314</Y>
+            <IsExpanded>false</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>Failure</Name>
+      </ActionProperties>
+      <WorkflowItemDataStartDataflowJob2>
+        <Name>Failure</Name>
+        <EntityName>Failure</EntityName>
+        <IsShared>false</IsShared>
+        <ActionRole>Normal</ActionRole>
+        <JobFilePath>
+          <Path />
+          <UncPath />
+        </JobFilePath>
+        <ServerPort>0</ServerPort>
+        <ResumeActionType>Rerun</ResumeActionType>
+        <SavedOutboundMeta>
+          <Children />
+          <Elements />
+          <Referenced>
+            <MetaBaseOfMetaElement xsi:type="MetaObject">
+              <Children />
+              <Elements>
+                <MetaElement>
+                  <CoreDbType>NVarChar</CoreDbType>
+                  <Name>$JobFilePath</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>String</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+              </Elements>
+              <Referenced />
+              <Name>Input</Name>
+              <InboundPortVisible>true</InboundPortVisible>
+              <OutboundPortVisible>true</OutboundPortVisible>
+              <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+              <IsEmbeddedMember>false</IsEmbeddedMember>
+              <Indicator>None</Indicator>
+            </MetaBaseOfMetaElement>
+            <MetaBaseOfMetaElement xsi:type="MetaObject">
+              <Children />
+              <Elements>
+                <MetaElement>
+                  <CoreDbType>NVarChar</CoreDbType>
+                  <Name>Status</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>String</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>NVarChar</CoreDbType>
+                  <Name>ErrorMessage</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>String</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>NVarChar</CoreDbType>
+                  <Name>ErrorStack</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>String</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>Boolean</CoreDbType>
+                  <Name>CompletedSuccessfully</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>Boolean</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>Int64</CoreDbType>
+                  <Name>JobId</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>Integer</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>Int64</CoreDbType>
+                  <Name>ParentJobId</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>Integer</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+                <MetaElement>
+                  <CoreDbType>Int64</CoreDbType>
+                  <Name>SessionId</Name>
+                  <HasCollections>false</HasCollections>
+                  <IsPrimaryKey>false</IsPrimaryKey>
+                  <DataType>Integer</DataType>
+                  <CanRead>true</CanRead>
+                  <CanWrite>true</CanWrite>
+                </MetaElement>
+              </Elements>
+              <Referenced />
+              <Name>Output</Name>
+              <InboundPortVisible>true</InboundPortVisible>
+              <OutboundPortVisible>true</OutboundPortVisible>
+              <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+              <IsEmbeddedMember>false</IsEmbeddedMember>
+              <Indicator>None</Indicator>
+            </MetaBaseOfMetaElement>
+          </Referenced>
+          <Name>Failure</Name>
+          <InboundPortVisible>true</InboundPortVisible>
+          <OutboundPortVisible>true</OutboundPortVisible>
+          <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+          <IsEmbeddedMember>false</IsEmbeddedMember>
+          <Indicator>None</Indicator>
+        </SavedOutboundMeta>
+        <RegressionType>None</RegressionType>
+        <IsPushdown>false</IsPushdown>
+      </WorkflowItemDataStartDataflowJob2>
+    </FlowDocumentItemAction>
   </Actions>
-  <Links />
+  <Links>
+    <FlowDocumentItemLink>
+      <UniqueId>12e0ccd0-47e1-4fab-ae82-d8a4344341ae</UniqueId>
+      <Start>RunDataflow</Start>
+      <End>Decision</End>
+      <LinkType>Normal</LinkType>
+    </FlowDocumentItemLink>
+    <FlowDocumentItemLink>
+      <UniqueId>c5cd5966-8000-4287-84cd-5dea6ef12f3b</UniqueId>
+      <Start>Decision</Start>
+      <End>Success</End>
+      <LinkType>ConditionalTrue</LinkType>
+    </FlowDocumentItemLink>
+    <FlowDocumentItemLink>
+      <UniqueId>0071f204-8085-4666-8283-24ebc49ae519</UniqueId>
+      <Start>Decision</Start>
+      <End>Failure</End>
+      <LinkType>ConditionalFalse</LinkType>
+    </FlowDocumentItemLink>
+    <FlowDocumentItemLink>
+      <UniqueId>7ee5a71a-0bc2-4f03-afb8-2b3873da284a</UniqueId>
+      <Start>FileSystem1</Start>
+      <End>RunDataflow</End>
+      <LinkType>Loop</LinkType>
+    </FlowDocumentItemLink>
+    <FlowDocumentItemLink>
+      <UniqueId>662918e0-db7d-40e7-b540-9091c581fc03</UniqueId>
+      <Start>RunDataflow</Start>
+      <End>FileSystemAction</End>
+      <LinkType>Normal</LinkType>
+    </FlowDocumentItemLink>
+  </Links>
   <Maps>
+    <FlowDocumentItemMap>
+      <UniqueId>99426205-6ed1-47c3-b125-ac54b61ea438</UniqueId>
+      <Start>Switch.DataFlow</Start>
+      <End>RunDataflow.Input.$JobFilePath</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>e09c7507-3193-4950-84f8-51c70c4820fa</UniqueId>
+      <Start>FileSystem1.FileName</Start>
+      <End>Switch.FileName</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
     <FlowDocumentItemMap>
       <UniqueId>452e7531-651e-4595-8ea1-c1b8a054b4f3</UniqueId>
       <Start>FileSystem1.FullPath</Start>
@@ -633,24 +1201,24 @@
   </Maps>
   <Relationships />
   <VisualInfo>
-    <UniqueId>17acd307-79ff-402b-9442-29dc67b3d58a</UniqueId>
+    <UniqueId>540dd6f6-5ca8-47dd-baea-a20ff52aa07e</UniqueId>
     <Actions />
     <DocumentBounds>
       <Location>
-        <X>186</X>
-        <Y>75</Y>
+        <X>60</X>
+        <Y>12</Y>
       </Location>
       <Size>
-        <Width>589</Width>
-        <Height>237</Height>
+        <Width>1282</Width>
+        <Height>522</Height>
       </Size>
-      <X>186</X>
-      <Y>75</Y>
-      <Width>589</Width>
-      <Height>237</Height>
+      <X>60</X>
+      <Y>12</Y>
+      <Width>1282</Width>
+      <Height>522</Height>
     </DocumentBounds>
     <DocumentPosition>
-      <X>0</X>
+      <X>67</X>
       <Y>0</Y>
     </DocumentPosition>
     <DocumentScale>1</DocumentScale>
