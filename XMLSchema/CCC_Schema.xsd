@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Expression">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Expression">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pool_Balance_End_of_Period" type="xs:string" />
+              <xs:element name="Excess_Funding_Account_Balance_End_of_Period" type="xs:string" />
+              <xs:element name="Trust_Required_Pool_Balance_End_of_Period" type="xs:string" />
+              <xs:element name="Trust_Available_Subordinated_Amount_End_of_Period" type="xs:string" />
+              <xs:element name="Trust_Indebtedness_End_of_Period" type="xs:string" />
+              <xs:element name="Unpaid_Purchase_Price_End_of_Period" type="xs:string" />
+              <xs:element name="Current_End_of_Period" type="xs:string" />
+              <xs:element name="Days_Past_Due_1_30_End_of_Period" type="xs:string" />
+              <xs:element name="Days_Past_Due_31_60_End_of_Period" type="xs:string" />
+              <xs:element name="Days_Past_Due_61_90_End_of_Period" type="xs:string" />
+              <xs:element name="Days_Past_Due_91_120_End_of_Period" type="xs:string" />
+              <xs:element name="Days_Past_Due_120_End_of_Period" type="xs:string" />
+              <xs:element name="Top_3_Main_Dealer_Perc_of_Pool_Balance_End_of_Period" type="xs:string" />
+              <xs:element name="Equipment_Type_Construction_Equipment_End_of_Period" type="xs:string" />
+              <xs:element name="Equipment_Type_Agricultural_Equipment_End_of_Period" type="xs:string" />
+              <xs:element name="Equipment_Type_Rental_End_of_Period" type="xs:string" />
+              <xs:element name="Equipment_Type_Parts_End_of_Period" type="xs:string" />
+              <xs:element name="New_Used_Equipment_New_Equipment_End_of_Period" type="xs:string" />
+              <xs:element name="New_Used_Equipment_Used_Equipment_End_of_Period" type="xs:string" />
+              <xs:element name="Development_Store_Receivables_Balance_End_of_Period" type="xs:string" />
+              <xs:element name="Rental_Equipment_End_of_Period" type="xs:string" />
+              <xs:element name="Fixed_Rate_Receivables_End_of_Period" type="xs:string" />
+              <xs:element name="Dealer_Overconc_Amount_7point5_perc_Main_Dealer_End_of_Period" type="xs:string" />
+              <xs:element name="Dealer_Overconc_Amount_5point5_perc_2nd_Dealer_End_of_Period" type="xs:string" />
+              <xs:element name="Dealer_Overconc_Amount_3point5_perc_3rd_Dealer_End_of_Period" type="xs:string" />
+              <xs:element name="Dealer_Overconc_Amount_2point5_perc_4thand5th_Dealer_End_of_Period" type="xs:string" />
+              <xs:element name="Other_Ineligible_Receivables_End_of_Period" type="xs:string" />
+              <xs:element name="Aggregate_Amount_of_Ineligible_Receivables_Reassigned_To_Transferor_End_of_Period" type="xs:string" />
+              <xs:element name="Adjusted_Pool_Balance" type="xs:string" />
+              <xs:element name="Reporting_Period_Beginning" type="xs:string" />
+              <xs:element name="Sellers_Interest" type="xs:string" />
+              <xs:element name="Portfolio_Composition_Total" type="xs:string" />
+              <xs:element name="Portfolio_Composition_Current_Perc" type="xs:string" />
+              <xs:element name="Portfolio_Composition_1_30_Perc" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -3,7 +3,7 @@
   <IsFolder>false</IsFolder>
   <Id>0</Id>
   <IsNewRecord>false</IsNewRecord>
-  <Name>C:\asterapoc\Dataflows\DataFlow1_CCC_VP.Df</Name>
+  <Name>C:\asterapoc\Dataflows\DataFlow1_CCC_VP - Copy.Df</Name>
   <Description />
   <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
   <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
@@ -2218,8 +2218,8 @@
           <NormalBounds>
             <Height>514.57336</Height>
             <Width>334.0244</Width>
-            <X>1042</X>
-            <Y>85</Y>
+            <X>1396.878</X>
+            <Y>74.02439</Y>
             <IsExpanded>true</IsExpanded>
             <IsSorted>false</IsSorted>
           </NormalBounds>
@@ -4141,6 +4141,398 @@
         </Parameters>
       </DataflowItemDataParameter>
     </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>a154e532-eb35-409b-a762-d4e192fda25d</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>a154e532-eb35-409b-a762-d4e192fda25d</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>XmlBuilder</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>200</Height>
+            <Width>200</Width>
+            <X>1117.5889</X>
+            <Y>659.81726</Y>
+            <IsExpanded>true</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>XmlJsonSerializer</Name>
+      </ActionProperties>
+      <DataflowItemDataXmlBuilder>
+        <Name>XmlJsonSerializer</Name>
+        <IsShared>false</IsShared>
+        <AutoLog>false</AutoLog>
+        <ISupportUniqueHeaders>true</ISupportUniqueHeaders>
+        <Layout xsi:type="XmlLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Input</Name>
+          <Description>Expression</Description>
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Xml</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <PolymorphicTypes>
+            <XmlPolymorphicType>
+              <Name />
+              <Subtypes />
+            </XmlPolymorphicType>
+          </PolymorphicTypes>
+          <IsJson>true</IsJson>
+          <EncodingName>utf-8</EncodingName>
+          <DefaultReaderOptions EndRecord="0" StartRecord="0" BooleanFormatToUse="" CaseInsensitiveHeaderMatch="true" ColumnMatching="UseFieldSequence" DateFormatToUse="" Encoding="utf-8" HeaderRowCount="1" IgnoreExtraFields="true" IgnoreLastRow="false" IntegerFormatToUse="" MakeAllFieldsAsStringInBuildLayout="false" MissingFieldsOK="false" NumberOfRecordsToReadForLayoutBuilding="5000" PreparserFilterType="ProcessAll" RealFormatToUse="" SkipFirstNRecords="0" SkipNullRecords="true" TreatEmptyStringAsNull="true" TrimStrings="true" UseParallelReader="true" FirstRowContainsHeaders="true" AllowAlternateHeaders="false" FilePath="" PartitionFile="false" UseMemoryMappedFile="false" PartitionCount="1">
+            <FilterRules />
+            <DeleteFileWhenDone>false</DeleteFileWhenDone>
+            <PreparserFilterRegularExpression />
+            <UseParallelStream>true</UseParallelStream>
+            <FilePathResolved>
+              <Path />
+              <UncPath />
+            </FilePathResolved>
+            <SkipFirstNBytes>0</SkipFirstNBytes>
+            <HierarchyDefinitionPath>
+              <Path />
+              <UncPath />
+            </HierarchyDefinitionPath>
+            <ProcessOnlyRecordsStartingWith />
+            <SchemaFilePath>C:\asterapoc\XMLSchema\CCC_Schema.xsd</SchemaFilePath>
+            <SchemaFilePathResolved>
+              <Path>C:\asterapoc\XMLSchema\CCC_Schema.xsd</Path>
+              <UncPath>C:\asterapoc\XMLSchema\CCC_Schema.xsd</UncPath>
+            </SchemaFilePathResolved>
+            <ValidationType>None</ValidationType>
+            <SchemaSource>FromFile</SchemaSource>
+          </DefaultReaderOptions>
+          <WriterOptions Encoding="utf-8" MaintainOriginalSequenceForWriting="true" OmitBOM="false" FirstRowContainsHeaders="true" FilePath="" Append="false">
+            <CheckDuplicateKeyValues>false</CheckDuplicateKeyValues>
+            <CheckForNulls>true</CheckForNulls>
+            <WriteNullStringAsEmptyString>false</WriteNullStringAsEmptyString>
+            <WriteNullNumericValuesAsZeros>false</WriteNullNumericValuesAsZeros>
+            <DoNotProcessRecordsWithErrors>false</DoNotProcessRecordsWithErrors>
+            <FilterRules />
+            <WriteTraceEntries>true</WriteTraceEntries>
+            <FilePathResolved>
+              <Path />
+              <UncPath />
+            </FilePathResolved>
+            <RootElement>Root</RootElement>
+            <SchemaOption>ReadFromSchemaFile</SchemaOption>
+            <PrettyPrint>true</PrettyPrint>
+            <OmitXMLDeclaration>false</OmitXMLDeclaration>
+            <OmitRoot>false</OmitRoot>
+            <FieldToXmlConversion>ConvertFieldsToElements</FieldToXmlConversion>
+            <XmlSchemaFilePath>
+              <Path>C:\asterapoc\XMLSchema\CCC_Schema.xsd</Path>
+              <UncPath>C:\asterapoc\XMLSchema\CCC_Schema.xsd</UncPath>
+            </XmlSchemaFilePath>
+          </WriterOptions>
+          <XmlSchemaText>&lt;?xml version="1.0" encoding="utf-16"?&gt;&#xD;
+&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;&#xD;
+  &lt;xs:element name="Expression"&gt;&#xD;
+    &lt;xs:complexType&gt;&#xD;
+      &lt;xs:sequence&gt;&#xD;
+        &lt;xs:element name="Expression"&gt;&#xD;
+          &lt;xs:complexType&gt;&#xD;
+            &lt;xs:sequence&gt;&#xD;
+              &lt;xs:element name="Pool_Balance_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Excess_Funding_Account_Balance_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Trust_Required_Pool_Balance_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Trust_Available_Subordinated_Amount_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Trust_Indebtedness_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Unpaid_Purchase_Price_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Current_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Days_Past_Due_1_30_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Days_Past_Due_31_60_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Days_Past_Due_61_90_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Days_Past_Due_91_120_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Days_Past_Due_120_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Top_3_Main_Dealer_Perc_of_Pool_Balance_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Equipment_Type_Construction_Equipment_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Equipment_Type_Agricultural_Equipment_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Equipment_Type_Rental_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Equipment_Type_Parts_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="New_Used_Equipment_New_Equipment_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="New_Used_Equipment_Used_Equipment_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Development_Store_Receivables_Balance_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Rental_Equipment_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Fixed_Rate_Receivables_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Dealer_Overconc_Amount_7point5_perc_Main_Dealer_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Dealer_Overconc_Amount_5point5_perc_2nd_Dealer_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Dealer_Overconc_Amount_3point5_perc_3rd_Dealer_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Dealer_Overconc_Amount_2point5_perc_4thand5th_Dealer_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Other_Ineligible_Receivables_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Aggregate_Amount_of_Ineligible_Receivables_Reassigned_To_Transferor_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Adjusted_Pool_Balance" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Reporting_Period_Beginning" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Sellers_Interest" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Portfolio_Composition_Total" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Portfolio_Composition_Current_Perc" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Portfolio_Composition_1_30_Perc" type="xs:string" /&gt;&#xD;
+            &lt;/xs:sequence&gt;&#xD;
+          &lt;/xs:complexType&gt;&#xD;
+        &lt;/xs:element&gt;&#xD;
+      &lt;/xs:sequence&gt;&#xD;
+    &lt;/xs:complexType&gt;&#xD;
+  &lt;/xs:element&gt;&#xD;
+&lt;/xs:schema&gt;</XmlSchemaText>
+          <XmlSchemaRootElementName xmlns="">Expression</XmlSchemaRootElementName>
+          <CompiledSchemas />
+          <Namespaces />
+          <AddInnerXml>false</AddInnerXml>
+        </Layout>
+        <InputLayout IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Record</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields>
+            <RecordField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="String" IsPrimaryKey="false" Header="Text" Index="0" AllowsNull="true" IsDependent="false" IsCategorical="false" IsIncluded="true" IsFormulaField="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" IsLagVariable="false" TimeSeriesNullTreatment="None" Name="Text">
+              <FieldRoles>Input Output</FieldRoles>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <UniqueId>10e1da96-d957-42ab-905d-e7b401eff2c2</UniqueId>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+              <IsVirtual>false</IsVirtual>
+              <IsDataValidationEnabled>true</IsDataValidationEnabled>
+              <MultipartFieldType>Text</MultipartFieldType>
+              <ParameterType>Query</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <IsRequired>true</IsRequired>
+              <SendValueAsPlaintext>false</SendValueAsPlaintext>
+              <RestParameterRequired>false</RestParameterRequired>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <IsResourceParameter>false</IsResourceParameter>
+              <InheritedParameter>No</InheritedParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <AccessPermission>Self</AccessPermission>
+              <TimeToLive>1</TimeToLive>
+              <Content />
+              <DestinationFolder />
+              <ContentType />
+              <DefaultName />
+            </RecordField>
+          </Fields>
+          <Children />
+          <Referenced />
+          <ValidationRules />
+        </InputLayout>
+        <RootNode>Root</RootNode>
+        <ShowErrorCollection>false</ShowErrorCollection>
+        <IsMultipleRecords>false</IsMultipleRecords>
+        <BuildOperationType>BuildOneRecordPerOutput</BuildOperationType>
+        <EncodingName>utf-8</EncodingName>
+        <XsdFilePath>C:\asterapoc\XMLSchema\CCC_Schema.xsd</XsdFilePath>
+      </DataflowItemDataXmlBuilder>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>fc688e88-1726-4c5a-b9af-4d03855891fd</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>fc688e88-1726-4c5a-b9af-4d03855891fd</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>XmlDest</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>200</Height>
+            <Width>200</Width>
+            <X>1373.0034</X>
+            <Y>668.3538</Y>
+            <IsExpanded>true</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <DoNotPushdown>false</DoNotPushdown>
+        <Name>XmlJsonDest</Name>
+      </ActionProperties>
+      <DataflowItemDataDestinationXml>
+        <Name>XmlJsonDest</Name>
+        <IsShared>false</IsShared>
+        <AutoLog>false</AutoLog>
+        <ISupportUniqueHeaders>true</ISupportUniqueHeaders>
+        <Layout xsi:type="XmlLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>XmlJsonDest</Name>
+          <Description>Expression</Description>
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Xml</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields />
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <PolymorphicTypes>
+            <XmlPolymorphicType>
+              <Name />
+              <Subtypes />
+            </XmlPolymorphicType>
+          </PolymorphicTypes>
+          <IsJson>true</IsJson>
+          <EncodingName>utf-8</EncodingName>
+          <DefaultReaderOptions EndRecord="0" StartRecord="0" BooleanFormatToUse="" CaseInsensitiveHeaderMatch="true" ColumnMatching="UseFieldSequence" DateFormatToUse="" Encoding="utf-8" HeaderRowCount="1" IgnoreExtraFields="true" IgnoreLastRow="false" IntegerFormatToUse="" MakeAllFieldsAsStringInBuildLayout="false" MissingFieldsOK="false" NumberOfRecordsToReadForLayoutBuilding="5000" PreparserFilterType="ProcessAll" RealFormatToUse="" SkipFirstNRecords="0" SkipNullRecords="true" TreatEmptyStringAsNull="true" TrimStrings="true" UseParallelReader="true" FirstRowContainsHeaders="true" AllowAlternateHeaders="false" FilePath="" PartitionFile="false" UseMemoryMappedFile="false" PartitionCount="1">
+            <FilterRules />
+            <DeleteFileWhenDone>false</DeleteFileWhenDone>
+            <PreparserFilterRegularExpression />
+            <UseParallelStream>true</UseParallelStream>
+            <FilePathResolved>
+              <Path />
+              <UncPath />
+            </FilePathResolved>
+            <SkipFirstNBytes>0</SkipFirstNBytes>
+            <HierarchyDefinitionPath>
+              <Path />
+              <UncPath />
+            </HierarchyDefinitionPath>
+            <ProcessOnlyRecordsStartingWith />
+            <SchemaFilePath />
+            <SchemaFilePathResolved>
+              <Path />
+              <UncPath />
+            </SchemaFilePathResolved>
+            <ValidationType>None</ValidationType>
+            <SchemaSource>FromFile</SchemaSource>
+          </DefaultReaderOptions>
+          <WriterOptions Encoding="utf-8" MaintainOriginalSequenceForWriting="true" OmitBOM="false" FirstRowContainsHeaders="true" FilePath="C:\asterapoc\XMLSchema\OutputJsonCCC.json" Append="false">
+            <CheckDuplicateKeyValues>false</CheckDuplicateKeyValues>
+            <CheckForNulls>true</CheckForNulls>
+            <WriteNullStringAsEmptyString>false</WriteNullStringAsEmptyString>
+            <WriteNullNumericValuesAsZeros>false</WriteNullNumericValuesAsZeros>
+            <DoNotProcessRecordsWithErrors>true</DoNotProcessRecordsWithErrors>
+            <FilterRules />
+            <WriteTraceEntries>true</WriteTraceEntries>
+            <FilePathResolved>
+              <Path>C:\asterapoc\XMLSchema\OutputJsonCCC.json</Path>
+              <UncPath>C:\asterapoc\XMLSchema\OutputJsonCCC.json</UncPath>
+            </FilePathResolved>
+            <RootElement>Root</RootElement>
+            <SchemaOption>ReadFromSchemaFile</SchemaOption>
+            <PrettyPrint>true</PrettyPrint>
+            <OmitXMLDeclaration>false</OmitXMLDeclaration>
+            <OmitRoot>false</OmitRoot>
+            <FieldToXmlConversion>ConvertFieldsToElements</FieldToXmlConversion>
+            <XmlSchemaFilePath>
+              <Path>C:\asterapoc\XMLSchema\CCC_Schema.xsd</Path>
+              <UncPath>C:\asterapoc\XMLSchema\CCC_Schema.xsd</UncPath>
+            </XmlSchemaFilePath>
+          </WriterOptions>
+          <XmlSchemaText>&lt;?xml version="1.0" encoding="utf-16"?&gt;&#xD;
+&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;&#xD;
+  &lt;xs:element name="Expression"&gt;&#xD;
+    &lt;xs:complexType&gt;&#xD;
+      &lt;xs:sequence&gt;&#xD;
+        &lt;xs:element name="Expression"&gt;&#xD;
+          &lt;xs:complexType&gt;&#xD;
+            &lt;xs:sequence&gt;&#xD;
+              &lt;xs:element name="Pool_Balance_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Excess_Funding_Account_Balance_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Trust_Required_Pool_Balance_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Trust_Available_Subordinated_Amount_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Trust_Indebtedness_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Unpaid_Purchase_Price_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Current_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Days_Past_Due_1_30_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Days_Past_Due_31_60_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Days_Past_Due_61_90_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Days_Past_Due_91_120_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Days_Past_Due_120_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Top_3_Main_Dealer_Perc_of_Pool_Balance_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Equipment_Type_Construction_Equipment_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Equipment_Type_Agricultural_Equipment_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Equipment_Type_Rental_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Equipment_Type_Parts_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="New_Used_Equipment_New_Equipment_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="New_Used_Equipment_Used_Equipment_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Development_Store_Receivables_Balance_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Rental_Equipment_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Fixed_Rate_Receivables_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Dealer_Overconc_Amount_7point5_perc_Main_Dealer_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Dealer_Overconc_Amount_5point5_perc_2nd_Dealer_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Dealer_Overconc_Amount_3point5_perc_3rd_Dealer_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Dealer_Overconc_Amount_2point5_perc_4thand5th_Dealer_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Other_Ineligible_Receivables_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Aggregate_Amount_of_Ineligible_Receivables_Reassigned_To_Transferor_End_of_Period" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Adjusted_Pool_Balance" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Reporting_Period_Beginning" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Sellers_Interest" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Portfolio_Composition_Total" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Portfolio_Composition_Current_Perc" type="xs:string" /&gt;&#xD;
+              &lt;xs:element name="Portfolio_Composition_1_30_Perc" type="xs:string" /&gt;&#xD;
+            &lt;/xs:sequence&gt;&#xD;
+          &lt;/xs:complexType&gt;&#xD;
+        &lt;/xs:element&gt;&#xD;
+      &lt;/xs:sequence&gt;&#xD;
+    &lt;/xs:complexType&gt;&#xD;
+  &lt;/xs:element&gt;&#xD;
+&lt;/xs:schema&gt;</XmlSchemaText>
+          <XmlSchemaRootElementName xmlns="">Expression</XmlSchemaRootElementName>
+          <CompiledSchemas />
+          <Namespaces />
+          <AddInnerXml>false</AddInnerXml>
+        </Layout>
+        <DoNotProcessRecordsWithErrors>true</DoNotProcessRecordsWithErrors>
+        <ClearIncomingRecordErrors>false</ClearIncomingRecordErrors>
+        <DoNotOverwriteDefaultsWithNullValues>false</DoNotOverwriteDefaultsWithNullValues>
+        <WriteToUniqueFiles>false</WriteToUniqueFiles>
+        <FilePath>C:\asterapoc\XMLSchema\OutputJsonCCC.json</FilePath>
+        <IsJson>true</IsJson>
+        <InboundTransform>
+          <Transforms />
+        </InboundTransform>
+        <XsdFilePath>C:\asterapoc\XMLSchema\CCC_Schema.xsd</XsdFilePath>
+      </DataflowItemDataDestinationXml>
+    </FlowDocumentItemAction>
   </Actions>
   <Links />
   <Maps>
@@ -4599,10 +4991,486 @@
       <MapValueType>Value</MapValueType>
       <MapLinkType>Data</MapLinkType>
     </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>60f6b100-7918-4ab5-a43e-473d9a7f2f65</UniqueId>
+      <Start>Expression.Pool_Balance_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Pool_Balance_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>29811e5c-8b70-4db0-9abf-9c194aed7b51</UniqueId>
+      <Start>Expression.Excess_Funding_Account_Balance_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Excess_Funding_Account_Balance_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>8105337f-0c8f-4c0b-8e7d-787f04d50835</UniqueId>
+      <Start>Expression.Trust_Required_Pool_Balance_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Trust_Required_Pool_Balance_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>926eb7e9-3d23-4082-8e1d-3dc163e9221f</UniqueId>
+      <Start>Expression.Trust_Available_Subordinated_Amount_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Trust_Available_Subordinated_Amount_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>0c83b348-6087-407c-9798-166c776b9329</UniqueId>
+      <Start>Expression.Trust_Indebtedness_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Trust_Indebtedness_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>190c68e0-ebef-443c-8e6e-6da4b644b208</UniqueId>
+      <Start>Expression.Unpaid_Purchase_Price_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Unpaid_Purchase_Price_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>2f30d111-8549-4a41-9a8d-8c2322b2b35d</UniqueId>
+      <Start>Expression.Current_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Current_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>0f7fa8b1-a0c1-4569-9838-9fc32cb7555c</UniqueId>
+      <Start>Expression.Days_Past_Due_1_30_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Days_Past_Due_1_30_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>63a292ed-e97c-4de6-9107-075f0f3c1496</UniqueId>
+      <Start>Expression.Days_Past_Due_31_60_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Days_Past_Due_31_60_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>13d0ab01-3cc2-473d-a494-44d037d4170b</UniqueId>
+      <Start>Expression.Days_Past_Due_61_90_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Days_Past_Due_61_90_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>1ab1cbe4-fc73-4e24-855d-0d7ba58e94c9</UniqueId>
+      <Start>Expression.Days_Past_Due_91_120_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Days_Past_Due_91_120_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>80800b48-6a79-410f-9997-2d0446278efa</UniqueId>
+      <Start>Expression.Days_Past_Due_120_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Days_Past_Due_120_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>f758658c-3924-4a4a-87bd-89770afeda96</UniqueId>
+      <Start>Expression.Top_3_Main_Dealer_Perc_of_Pool_Balance_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Top_3_Main_Dealer_Perc_of_Pool_Balance_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>975295ea-f89f-4b3b-be3d-8eaf1f958ee9</UniqueId>
+      <Start>Expression.Equipment_Type_Construction_Equipment_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Equipment_Type_Construction_Equipment_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>14930c4f-9c20-4316-9621-2edbf3083150</UniqueId>
+      <Start>Expression.Equipment_Type_Agricultural_Equipment_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Equipment_Type_Agricultural_Equipment_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>d8c08754-183c-4d28-bcb5-8e0737b972ba</UniqueId>
+      <Start>Expression.Equipment_Type_Rental_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Equipment_Type_Rental_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>f86ca41e-67ac-4891-bef7-c8ac948f26b2</UniqueId>
+      <Start>Expression.Equipment_Type_Parts_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Equipment_Type_Parts_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>ceba230b-ff64-449b-b28a-da106fbf2d1b</UniqueId>
+      <Start>Expression.New_Used_Equipment_New_Equipment_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.New_Used_Equipment_New_Equipment_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>59830363-4c86-40bd-82c5-616f6bf14e49</UniqueId>
+      <Start>Expression.New_Used_Equipment_Used_Equipment_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.New_Used_Equipment_Used_Equipment_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>53cb1fa0-930f-4c6d-8558-21cfbc453be6</UniqueId>
+      <Start>Expression.Development_Store_Receivables_Balance_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Development_Store_Receivables_Balance_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>3d64bc8e-fa5c-413a-b994-e7eb0e5c1623</UniqueId>
+      <Start>Expression.Rental_Equipment_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Rental_Equipment_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>f10c6926-7701-4291-8a3a-7506b9d4319f</UniqueId>
+      <Start>Expression.Fixed_Rate_Receivables_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Fixed_Rate_Receivables_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>a53681d5-07dd-49f4-8884-52a7075e6312</UniqueId>
+      <Start>Expression.Dealer_Overconc_Amount_7point5_perc_Main_Dealer_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Dealer_Overconc_Amount_7point5_perc_Main_Dealer_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>cff561e7-489a-4fba-b047-00bf5b35e3dd</UniqueId>
+      <Start>Expression.Dealer_Overconc_Amount_5point5_perc_2nd_Dealer_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Dealer_Overconc_Amount_5point5_perc_2nd_Dealer_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>ad694cf9-03ca-44a0-a17a-f09014faf6b2</UniqueId>
+      <Start>Expression.Dealer_Overconc_Amount_3point5_perc_3rd_Dealer_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Dealer_Overconc_Amount_3point5_perc_3rd_Dealer_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>beebbe08-7832-43aa-b5da-cfebbcff6000</UniqueId>
+      <Start>Expression.Dealer_Overconc_Amount_2point5_perc_4thand5th_Dealer_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Dealer_Overconc_Amount_2point5_perc_4thand5th_Dealer_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>b718ed56-b6fc-4d64-9c15-b7d7f100ff93</UniqueId>
+      <Start>Expression.Other_Ineligible_Receivables_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Other_Ineligible_Receivables_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>f1b8436a-f64f-4d9c-811f-7b3c6d965ec7</UniqueId>
+      <Start>Expression.Aggregate_Amount_of_Ineligible_Receivables_Reassigned_To_Transferor_End_of_Period</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Aggregate_Amount_of_Ineligible_Receivables_Reassigned_To_Transferor_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>56f31c6b-4129-429b-ad62-f324755444cd</UniqueId>
+      <Start>Expression.Adjusted_Pool_Balance</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Adjusted_Pool_Balance</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>e2797c22-383a-4ed4-931b-0574dc20af99</UniqueId>
+      <Start>Expression.Reporting_Period_Beginning</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Reporting_Period_Beginning</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>4e9b7137-c670-4e2c-b54e-780e86e71ecf</UniqueId>
+      <Start>Expression.Sellers_Interest</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Sellers_Interest</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>1342fd9d-c5f1-4708-b58c-6a573a2b84aa</UniqueId>
+      <Start>Expression.Portfolio_Composition_Total</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Portfolio_Composition_Total</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>baba4280-30f1-4a92-aadb-a877cf54c3cb</UniqueId>
+      <Start>Expression.Portfolio_Composition_Current_Perc</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Portfolio_Composition_Current_Perc</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>8232d87b-34e8-4d9d-90b5-475c6ea4dfb0</UniqueId>
+      <Start>Expression.Portfolio_Composition_1_30_Perc</Start>
+      <End>XmlJsonSerializer.Expression.Expression.Portfolio_Composition_1_30_Perc</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>2a885624-8a98-458e-a929-6ce15fdd053f</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Pool_Balance_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Pool_Balance_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>72b3b8fe-b557-4e3a-a90d-c2008699bad1</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Excess_Funding_Account_Balance_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Excess_Funding_Account_Balance_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>99afbb0e-53f5-4841-b64e-a63ee531e075</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Trust_Required_Pool_Balance_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Trust_Required_Pool_Balance_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>d1139237-fda6-400a-b8a6-97fe9172210a</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Trust_Available_Subordinated_Amount_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Trust_Available_Subordinated_Amount_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>5076fe92-d512-45b0-9e1d-45184adfa102</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Trust_Indebtedness_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Trust_Indebtedness_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>24e9c608-c945-4181-bd57-66874748eae2</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Unpaid_Purchase_Price_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Unpaid_Purchase_Price_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>0f58d5a5-f07c-42ff-8b66-0f4ce8a2f8d2</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Current_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Current_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>c41a0994-6079-4c94-9710-63e56adbb404</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Days_Past_Due_1_30_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Days_Past_Due_1_30_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>130727e1-e0bc-455b-b760-622f88f7d7c3</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Days_Past_Due_31_60_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Days_Past_Due_31_60_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>e4085c26-9e39-4c2d-9d53-ad18dc0f4be5</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Days_Past_Due_61_90_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Days_Past_Due_61_90_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>1a270721-ad5f-494c-83ae-057db04af786</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Days_Past_Due_91_120_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Days_Past_Due_91_120_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>9e27e7ee-8a9c-4a76-8470-b7ded6d4179f</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Days_Past_Due_120_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Days_Past_Due_120_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>ef201442-5428-4b01-b8bb-4ca771bdcb01</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Top_3_Main_Dealer_Perc_of_Pool_Balance_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Top_3_Main_Dealer_Perc_of_Pool_Balance_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>dd466369-db19-4a2e-89aa-8d7e788ba2eb</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Equipment_Type_Construction_Equipment_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Equipment_Type_Construction_Equipment_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>ebc396f6-f8d9-40a2-887a-148249864008</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Equipment_Type_Agricultural_Equipment_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Equipment_Type_Agricultural_Equipment_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>8cc8644e-c2b5-4cbe-992a-c2decd76174e</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Equipment_Type_Rental_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Equipment_Type_Rental_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>1e7b3d14-24da-46b7-8c17-093e6cd60459</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Equipment_Type_Parts_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Equipment_Type_Parts_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>87ed9e12-c7ea-4c2a-acd3-a66324632546</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.New_Used_Equipment_New_Equipment_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.New_Used_Equipment_New_Equipment_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>a05f302c-314b-4de2-a8a2-4bbd4585e680</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.New_Used_Equipment_Used_Equipment_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.New_Used_Equipment_Used_Equipment_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>40be5ae7-9cc3-437a-bd8f-3b20be59f83a</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Development_Store_Receivables_Balance_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Development_Store_Receivables_Balance_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>68b8a9b0-e0e2-4806-9e10-3a383c34bc30</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Rental_Equipment_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Rental_Equipment_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>dd4d48bb-1f0e-42de-b2ca-4729d6867c28</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Fixed_Rate_Receivables_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Fixed_Rate_Receivables_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>02234f32-c1a4-4abe-9da9-a790abc5c9f7</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Dealer_Overconc_Amount_7point5_perc_Main_Dealer_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Dealer_Overconc_Amount_7point5_perc_Main_Dealer_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>567e9b41-56fa-4294-995b-fa10c78668cf</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Dealer_Overconc_Amount_5point5_perc_2nd_Dealer_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Dealer_Overconc_Amount_5point5_perc_2nd_Dealer_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>65873278-567c-4fb9-9c4b-f1de6eef2595</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Dealer_Overconc_Amount_3point5_perc_3rd_Dealer_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Dealer_Overconc_Amount_3point5_perc_3rd_Dealer_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>945c9f22-168b-4c01-9a56-594757ce9cca</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Dealer_Overconc_Amount_2point5_perc_4thand5th_Dealer_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Dealer_Overconc_Amount_2point5_perc_4thand5th_Dealer_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>9af24a6e-9596-4957-a5fc-18e5c29637a3</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Other_Ineligible_Receivables_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Other_Ineligible_Receivables_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>09ee2ab2-3646-4a3b-984f-4568951e1745</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Aggregate_Amount_of_Ineligible_Receivables_Reassigned_To_Transferor_End_of_Period</Start>
+      <End>XmlJsonDest.Expression.Aggregate_Amount_of_Ineligible_Receivables_Reassigned_To_Transferor_End_of_Period</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>60de21db-a983-4f37-9f3f-ba8bf695c9a0</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Adjusted_Pool_Balance</Start>
+      <End>XmlJsonDest.Expression.Adjusted_Pool_Balance</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>fa45a521-5afb-4df8-8a04-bf7262b5c422</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Reporting_Period_Beginning</Start>
+      <End>XmlJsonDest.Expression.Reporting_Period_Beginning</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>7000b37a-837d-4aa6-bbe9-08cfe36ab1da</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Sellers_Interest</Start>
+      <End>XmlJsonDest.Expression.Sellers_Interest</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>f4900269-0b39-4dc8-a9f5-e6e9a2f617be</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Portfolio_Composition_Total</Start>
+      <End>XmlJsonDest.Expression.Portfolio_Composition_Total</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>dd5eb959-dbd4-44b7-a275-d232398f7955</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Portfolio_Composition_Current_Perc</Start>
+      <End>XmlJsonDest.Expression.Portfolio_Composition_Current_Perc</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>e5f7dc7a-d08b-4faf-9594-c342c485a32a</UniqueId>
+      <Start>XmlJsonSerializer.Expression.Expression.Portfolio_Composition_1_30_Perc</Start>
+      <End>XmlJsonDest.Expression.Portfolio_Composition_1_30_Perc</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
   </Maps>
   <Relationships />
   <VisualInfo>
-    <UniqueId>6fd67d57-ac98-458a-93e0-905922db4492</UniqueId>
+    <UniqueId>bac92adf-aa77-468c-8816-8393d938cdd0</UniqueId>
     <Actions />
     <DocumentBounds>
       <Location>
@@ -4610,17 +5478,17 @@
         <Y>5.1219444</Y>
       </Location>
       <Size>
-        <Width>1445.3903</Width>
-        <Height>890.5733</Height>
+        <Width>1800.2683</Width>
+        <Height>894.2319</Height>
       </Size>
       <X>-43.365814</X>
       <Y>5.1219444</Y>
-      <Width>1445.3903</Width>
-      <Height>890.5733</Height>
+      <Width>1800.2683</Width>
+      <Height>894.2319</Height>
     </DocumentBounds>
     <DocumentPosition>
-      <X>-53.142857</X>
-      <Y>-6.0364575</Y>
+      <X>193.60974</X>
+      <Y>300</Y>
     </DocumentPosition>
     <DocumentScale>0.82</DocumentScale>
     <IsSelected>false</IsSelected>
